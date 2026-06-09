@@ -1,0 +1,149 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --color-on-error: #ffffff;
+  --color-tertiary-fixed: #f4dfcb;
+  --color-surface-container-low: #f5f3ee;
+  --color-secondary-fixed: #f1dfd1;
+  --color-tertiary: #68594a;
+  --color-on-secondary-fixed-variant: #50453b;
+  --color-surface: #fbf9f4;
+  --color-surface-container-lowest: #ffffff;
+  --color-inverse-on-surface: #f2f1ec;
+  --color-on-secondary-fixed: #231a11;
+  --color-on-error-container: #93000a;
+  --color-on-primary-fixed: #291801;
+  --color-primary: #705838;
+  --color-tertiary-container: #827261;
+  --color-on-primary: #ffffff;
+  --color-inverse-primary: #e2c19b;
+  --color-primary-fixed: #ffddb6;
+  --color-on-primary-container: #fffbff;
+  --color-outline-variant: #d1c4b8;
+  --color-error: #ba1a1a;
+  --color-secondary-fixed-dim: #d4c4b6;
+  --color-on-secondary: #ffffff;
+  --color-on-tertiary: #ffffff;
+  --color-surface-container-highest: #e4e2dd;
+  --color-surface-container: #f0eee9;
+  --color-inverse-surface: #30312e;
+  --color-on-surface-variant: #4e453c;
+  --color-surface-bright: #fbf9f4;
+  --color-on-surface: #1b1c19;
+  --color-surface-variant: #e4e2dd;
+  --color-primary-container: #8b704f;
+  --color-error-container: #ffdad6;
+  --color-surface-dim: #dbdad5;
+  --color-secondary: #695c51;
+  --color-background: #fbf9f4;
+  --color-outline: #80756b;
+  --color-on-secondary-container: #6f6257;
+  --color-on-tertiary-fixed-variant: #524436;
+  --color-on-primary-fixed-variant: #594325;
+  --color-on-background: #1b1c19;
+  --color-surface-container-high: #eae8e3;
+  --color-surface-tint: #735a3a;
+  --color-on-tertiary-fixed: #241a0e;
+  --color-on-tertiary-container: #fffbff;
+  --color-secondary-container: #f1dfd1;
+  --color-primary-fixed-dim: #e2c19b;
+  --color-tertiary-fixed-dim: #d7c3b0;
+
+  --radius-DEFAULT: 0.125rem;
+  --radius-lg: 0.25rem;
+  --radius-xl: 0.5rem;
+  --radius-full: 0.75rem;
+
+  --spacing-margin-desktop: 64px;
+  --spacing-gutter: 24px;
+  --spacing-container-max: 1280px;
+  --spacing-unit: 8px;
+  --spacing-margin-mobile: 20px;
+  --spacing-section-gap: 80px;
+
+  --font-headline-lg: "Playfair Display", serif;
+  --font-headline-md: "Playfair Display", serif;
+  --font-headline-sm: "Playfair Display", serif;
+  --font-headline-lg-mobile: "Playfair Display", serif;
+  --font-display-lg: "Playfair Display", serif;
+
+  --font-label-md: "Plus Jakarta Sans", sans-serif;
+  --font-label-lg: "Plus Jakarta Sans", sans-serif;
+  --font-body-md: "Plus Jakarta Sans", sans-serif;
+  --font-body-lg: "Plus Jakarta Sans", sans-serif;
+}
+
+@utility text-headline-lg {
+  font-size: 48px;
+  line-height: 1.2;
+  font-weight: 500;
+}
+@utility text-headline-md {
+  font-size: 32px;
+  line-height: 1.3;
+  font-weight: 500;
+}
+@utility text-label-md {
+  font-size: 12px;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+  font-weight: 500;
+}
+@utility text-headline-sm {
+  font-size: 24px;
+  line-height: 1.4;
+  font-weight: 500;
+}
+@utility text-body-md {
+  font-size: 16px;
+  line-height: 1.6;
+  font-weight: 400;
+}
+@utility text-label-lg {
+  font-size: 14px;
+  line-height: 1.2;
+  letter-spacing: 0.05em;
+  font-weight: 600;
+}
+@utility text-display-lg {
+  font-size: 64px;
+  line-height: 1.1;
+  letter-spacing: -0.02em;
+  font-weight: 600;
+}
+@utility text-body-lg {
+  font-size: 18px;
+  line-height: 1.6;
+  font-weight: 400;
+}
+@utility text-headline-lg-mobile {
+  font-size: 32px;
+  line-height: 1.2;
+  font-weight: 500;
+}
+
+/* Open style inputs */
+.input-open {
+    border: none;
+    border-bottom: 1px solid var(--color-outline-variant);
+    background-color: transparent;
+    border-radius: 0;
+    padding-left: 0;
+    padding-right: 0;
+}
+.input-open:focus {
+    box-shadow: none;
+    outline: none;
+    border-bottom-color: var(--color-primary);
+}
+
+/* Hide scrollbars & enable smooth scroll */
+html {
+    scroll-behavior: smooth;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+}
+::-webkit-scrollbar {
+    display: none;
+}
